@@ -2,7 +2,7 @@ class Triangle
   attr_accessor :a,:b,:c
   # write code here
   def initialize(a,b,c)
-
+@r=[]
     @a=a
     @b=b
     @c=c
