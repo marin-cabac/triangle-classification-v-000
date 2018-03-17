@@ -5,5 +5,4 @@ class Triangle
       :equilateral
   end
 end
-end 
-
+end
