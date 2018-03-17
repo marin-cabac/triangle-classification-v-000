@@ -3,5 +3,5 @@ class Triangle
   def initialize(a,b,c)
     if a==b && b==c
       :equilateral
-  end 
+  end
 end
