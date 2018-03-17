@@ -9,5 +9,6 @@ class Triangle
   def kind
     if @a==@b && @b==@c
       :equilateral
+    end 
 end
 end
