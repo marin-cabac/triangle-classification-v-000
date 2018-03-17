@@ -11,16 +11,14 @@ class Triangle
      raise TriangleError
     end
 
-  if (@a+@b<@c ||@a+@c<@b||@b+@c<@a)
-    raise TriangleError
-  elsif @a==@b && @b==@c
-      :equilateral
-    elsif @b==@c ||@a==@c||@a==@b
-      :isosceles
-    elsif  @a!=@b && @b!=@c
-      :scalene
-
-end
+    if @a == @b && @b == c
+        :equilateral
+     elsif @a == @b || @a == @c || @b == @c
+       :isosceles
+     else
+       :scalene
+     end
+   end
 end
 end
 
