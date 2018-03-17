@@ -2,8 +2,8 @@ class Triangle
   attr_accessor :a,:b,:c
   # write code here
   def initialize(a,b,c)
-     @a,@b,@c=a,b,c
-     @arr=[@a,@b,@c]
+      
+     @arr=[a,b,c]
   end
   def kind
     min, min2, max = @arr.sort
