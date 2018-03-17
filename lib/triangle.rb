@@ -2,7 +2,7 @@ class Triangle
   attr_accessor :a,:b,:c
   # write code here
   def initialize(a,b,c)
-     
+
     @a=a
     @b=b
     @c=c
@@ -14,7 +14,7 @@ class Triangle
       :equilateral
     elsif @b==@c ||@a==@c||@a==@b
       :isosceles
-    elsif  @a!=@b && @b!=@c 
+    elsif  @a!=@b && @b!=@c
       :scalene
     elsif  r.any?(&:negative?)
       raise TriangleError
