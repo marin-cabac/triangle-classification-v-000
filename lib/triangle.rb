@@ -6,7 +6,7 @@ class Triangle
     @a=a
     @b=b
     @c=c
-    r=[@a,@b,@c]
+    @r=[@a,@b,@c]
   end
   def kind
     min, min2, max = r.sort
