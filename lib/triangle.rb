@@ -9,6 +9,8 @@ class Triangle
   def kind
     if @a==@b && @b==@c
       :equilateral
-    end 
+    elsif @b==@c
+      :isosceles
+    end
 end
 end
