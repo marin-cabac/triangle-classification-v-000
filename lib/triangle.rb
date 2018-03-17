@@ -9,10 +9,12 @@ class Triangle
     r=[@a,@b,@c]
   end
   def kind
-    if a < 0 || b < 0 || c < 0
-    raise TriangleError, "a triangle should not have a side with a negative value."
+    min, min2, max = [@a, @b, @c].sort
++    if @a < 0 || @b < 0 || @c < 0 || min + min2 <= max
++      raise TriangleError
++    end
 
-  elsif (@a+@b<@c ||@a+@c<@b||@b+@c<@a)
+  if (@a+@b<@c ||@a+@c<@b||@b+@c<@a)
     raise TriangleError
   elsif @a==@b && @b==@c
       :equilateral
