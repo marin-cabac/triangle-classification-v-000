@@ -9,7 +9,7 @@ class Triangle
     r=[@a,@b,@c]
   end
   def kind
-    min, min2, max = [@a, @b, @c].sort
+    min, min2, max = r.sort
    if @a < 0 || @b < 0 || @c < 0 || min + min2 <= max
      raise TriangleError
     end
@@ -24,7 +24,7 @@ class Triangle
       :scalene
 
 
-end 
+end
 end
 end
 class TriangleError < StandardError
