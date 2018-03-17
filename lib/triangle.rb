@@ -10,7 +10,7 @@ class Triangle
   end
   def kind
     if a < 0 || b < 0 || c < 0
-    raise TriangleError, "a triangle should not have a side with a negative value." 
+    raise TriangleError, "a triangle should not have a side with a negative value."
 
   elsif (@a+@b<@c ||@a+@c<@b||@b+@c<@a)
     raise TriangleError
