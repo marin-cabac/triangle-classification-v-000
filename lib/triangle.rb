@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  def initialize(a,b,c)
+  def kind(a,b,c)
     if a==b && b==c
       :equilateral
   end
