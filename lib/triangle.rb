@@ -2,7 +2,7 @@ class Triangle
   attr_accessor :a,:b,:c
   # write code here
   def initialize(a,b,c)
-      
+
      arr=[a,b,c]
   end
   def kind
