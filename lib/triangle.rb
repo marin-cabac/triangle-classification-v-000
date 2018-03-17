@@ -3,10 +3,10 @@ class Triangle
   # write code here
   def initialize(a,b,c)
      @a=a; @b=b; @c=c;
-     @r=[@a,@b,@c]
+     @arr=[@a,@b,@c]
   end
   def kind
-    min, min2, max = @r.sort
+    min, min2, max = @arr.sort
    if @a < 0 || @b < 0 || @c < 0 || min + min2 <= max
      raise TriangleError
     end
